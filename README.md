@@ -27,22 +27,6 @@ A number of tools have been added to improve the development experience and prov
 -   [Nodemon](https://www.npmjs.com/package/nodemon) -> Simple monitor script for use during development
 -   [Lint-staged](https://www.npmjs.com/package/lint-staged) -> Runs linter and formatter before commits
 
-<!-- USAGE -->
-
-## Usage
-
-```
-👍 Click on USE THIS TEMPLATE button 👍
-```
-
-In this way you will create your project based on the following template
-
-After creating the repository and cloning it locally
-
-```
-npm i
-```
-
 <!-- LICENSE -->
 
 ## License
