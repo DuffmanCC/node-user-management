@@ -6,25 +6,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 <div align="center">
-  
-  <a href="">[![Contributors][contributors-shield]][contributors-url]</a>
-  <a href="">[![Forks][forks-shield]][forks-url]</a>
-  <a href="">[![Stargazers][stars-shield]][stars-url]</a>
-  <a href="">[![Issues][issues-shield]][issues-url]</a>
-  <a href="">[![MIT License][license-shield]][license-url]</a>
-</div>
-
-<div align="center">
-  <h1>Node.JS Template</h1>
-  <p>
-    Template for the projects developed in the Node.JS course of the LearnThis Academy elearning platform.
-    <br />
-    <br />
-    <a style='font-size:16px' href="https://learnthisacademy.com" target='_blank'><strong>Explore LearnThis</strong></a>
-    <br />
-    <br />
-  </p>
-
+  <h1>Node.JS User Management Practice</h1>
 </div>
 
 <!-- BUILT WITH -->
@@ -66,19 +48,3 @@ npm i
 ## License
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/learnthisacademy/nodejs-template.svg?style=for-the-badge&color=92DCE5
-[contributors-url]: https://github.com/learnthisacademy/nodejs-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/learnthisacademy/nodejs-template.svg?style=for-the-badge
-[forks-url]: https://github.com/learnthisacademy/nodejs-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/learnthisacademy/nodejs-template.svg?style=for-the-badge
-[stars-url]: https://github.com/learnthisacademy/nodejs-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/learnthisacademy/nodejs-template.svg?style=for-the-badge
-[issues-url]: https://github.com/learnthisacademy/nodejs-template/issues
-[license-shield]: https://img.shields.io/github/license/learnthisacademy/nodejs-template.svg?style=for-the-badge
-[license-url]: https://github.com/learnthisacademy/nodejs-template/blob/main/LICENSE
-[learnthis-url]: http://learnthisacademy.com/
-[product-screenshot]: images/screenshot.png
