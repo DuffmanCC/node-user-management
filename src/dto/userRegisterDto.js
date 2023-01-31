@@ -9,7 +9,6 @@ import { _id, name, surname, email, password } from './dtoTypes.js';
  */
 const schema = Type.Object(
     {
-        _id: _id,
         name: name,
         surname: surname,
         email: email,
@@ -33,7 +32,7 @@ ajv.addFormat('password', /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/);
 /**
  * pass formats
  */
-addFormats(ajv, ['uuid', 'email']).addKeyword('kind').addKeyword('modifier');
+addFormats(ajv, ['email']).addKeyword('kind').addKeyword('modifier');
 addErrors(ajv);
 
 /**

@@ -1,11 +1,9 @@
 import userModel from '#Schemas/userSchema.js';
 import { hash } from 'bcrypt';
+import uuid4 from 'uuid4';
 
 const userRegisterController = async (req, res) => {
-    const { _id, name, surname, email, password } = req.body;
-
-    const existingUserById = await userModel.findById(_id);
-    if (existingUserById) return res.status(409).send('user ID duplicated');
+    const { name, surname, email, password } = req.body;
 
     const existingUserByEmail = await userModel.findOne({ email }).exec();
     if (existingUserByEmail)
@@ -14,7 +12,7 @@ const userRegisterController = async (req, res) => {
     const hashedPassword = await hash(password, 10);
 
     const user = new userModel({
-        _id,
+        _id: uuid4(),
         name,
         surname,
         email,

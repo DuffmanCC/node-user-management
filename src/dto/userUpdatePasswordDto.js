@@ -48,7 +48,7 @@ const userUpdatePasswordDto = (req, res, next) => {
             .send({ errors: errors.map((error) => error.message) });
     }
 
-    res.sendStatus(200);
+    next();
 };
 
 export default userUpdatePasswordDto;

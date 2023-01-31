@@ -9,6 +9,10 @@ import userJwtDto from '#Dto/userJwtDto.js';
 import userRegisterController from '#Controllers/userRegisterController.js';
 import userLoginController from '#Controllers/userLoginController.js';
 import userProfileController from '#Controllers/userProfileController.js';
+import userUpdateDataController from '#Controllers/userUpdateDataController.js';
+import userUpdateEmailController from '#Controllers/userUpdateEmailController.js';
+import userUpdatePasswordController from '#Controllers/userUpdatePasswordController.js';
+import userUnregisterController from '#Controllers/userUnregisterController.js';
 
 const userRouter = Router();
 
@@ -18,32 +22,32 @@ userRouter.post('/login', userLoginDto, userLoginController);
 
 userRouter.get('/profile', userJwtDto, userProfileController);
 
-// userRouter.patch(
-//     '/update-data',
-//     userJwtDto,
-//     userUpdateDataDto,
-//     userUpdateDataController
-// );
+userRouter.patch(
+    '/update-data',
+    userJwtDto,
+    userUpdateDataDto,
+    userUpdateDataController
+);
 
-// userRouter.patch(
-//     '/update-email',
-//     userJwtDto,
-//     userUpdateEmailDto,
-//     userUpdateEmailController
-// );
+userRouter.patch(
+    '/update-email',
+    userJwtDto,
+    userUpdateEmailDto,
+    userUpdateEmailController
+);
 
-// userRouter.patch(
-//     '/update-password',
-//     userJwtDto,
-//     userUpdatePasswordDto,
-//     userUpdatePasswordController
-// );
+userRouter.patch(
+    '/update-password',
+    userJwtDto,
+    userUpdatePasswordDto,
+    userUpdatePasswordController
+);
 
-// userRouter.delete(
-//     '/unregister',
-//     userJwtDto,
-//     userUnregisterDto,
-//     userUnregisterController
-// );
+userRouter.delete(
+    '/unregister',
+    userJwtDto,
+    userUnregisterDto,
+    userUnregisterController
+);
 
 export default userRouter;

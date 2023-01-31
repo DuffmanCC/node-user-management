@@ -1,5 +1,4 @@
 import userModel from '#Schemas/userSchema.js';
-import { compare } from 'bcrypt';
 import { jwtVerify } from 'jose';
 
 const userProfileController = async (req, res) => {

@@ -9,7 +9,6 @@ import { _id, name, surname, email, password } from './dtoTypes.js';
  */
 const schema = Type.Object(
     {
-        email: email,
         password: password,
     },
     {
@@ -52,7 +51,7 @@ const userUnregisterDto = (req, res, next) => {
             .send({ errors: errors.map((error) => error.message) });
     }
 
-    res.sendStatus(200);
+    next();
 };
 
 export default userUnregisterDto;

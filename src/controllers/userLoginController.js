@@ -8,8 +8,12 @@ const userRegisterController = async (req, res) => {
     const existingUserByEmail = await userModel.findOne({ email }).exec();
     if (!existingUserByEmail) return res.status(401).send('Wrong credentials');
 
+    console.log('test1');
+
     const checkPass = await compare(password, existingUserByEmail.password);
     if (!checkPass) return res.status(401).send('Wrong credentials');
+
+    console.log('test2');
 
     const jwtConstructor = new SignJWT({
         id: existingUserByEmail._id,
